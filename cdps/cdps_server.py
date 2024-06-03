@@ -4,7 +4,8 @@ import sys
 from cdps.config import Config
 from cdps.console.cdps import console_cdps
 from cdps.constants import core_constant
-from cdps.plugin.events import onServerCloseEvent, onServerStartEvent, onCommandEvent
+from cdps.plugin.events import (onCommandEvent, onServerCloseEvent,
+                                onServerStartEvent)
 from cdps.plugin.manager import Manager, Plugin
 from cdps.state import State
 from cdps.utils.logger import Log
@@ -61,6 +62,7 @@ class CDPS:
             self.plugins_info = {"cdps": core_constant.INFO}
             plugin.load_info(
                 self.plugins_info, self.all_plugins)
+            plugin.pip_dependencies(self.plugins_info, self.all_plugins)
             plugin.dependencies(self.plugins_info, self.all_plugins)
             plugin.load_plugins(self.all_plugins)
             self.on_start()
