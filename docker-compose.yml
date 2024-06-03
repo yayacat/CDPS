@@ -1,0 +1,13 @@
+services:
+  cdps:
+    container_name: cdps
+    image: cdps
+    # ports:
+    #   - "1015:1015/udp"
+    volumes:
+      - ./config.yml:/app/config.yml
+      - ./plugins:/app/plugins
+    restart: on-failure
+    stdin_open: true
+    tty: true
+    network_mode: host
