@@ -10,6 +10,16 @@
             "github": "ExpTechTW/CDPS-color_log",
             "package_name":"color_log",
             "last_update_time":"2024-06-04 22:00"
+        },
+        {
+            "name": "websocketclient",
+            "description": "CDPS 的 websocket client擴充",
+            "tag": [
+                "info"
+            ],
+            "github": "ExpTechTW/CDPS-websocketclient",
+            "package_name":"websocketclient",
+            "last_update_time":"2024-06-07 19:00"
         }
     ]
 }
