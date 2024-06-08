@@ -20,6 +20,26 @@
             "github": "ExpTechTW/CDPS-websocketclient",
             "package_name":"websocketclient",
             "last_update_time":"2024-06-07 19:00"
+        },
+        {
+            "name": "discord_webhook",
+            "description": "這是為 CDPS 打造出的 Discord Webhook套件",
+            "tag": [
+                "info"
+            ],
+            "github": "PiscesXD/cdps-discordwebhook",
+            "package_name":"discord_webhook",
+            "last_update_time":"2024-06-08 10:00"
+        },
+        {
+            "name": "report",
+            "description": "接收地震報告",
+            "tag": [
+                "info"
+            ],
+            "github": "ExpTechTW/CDPS-report",
+            "package_name":"report",
+            "last_update_time":"2024-06-08 10:00"
         }
     ]
 }
